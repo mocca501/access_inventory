@@ -3,7 +3,7 @@
 include 'connect.php';
 
 // SQL query to fetch data from tbl_server with search condition
-$sql = "SELECT tbl_server.server_id, tbl_server_network.Network_IP, tbl_server.server_name
+$sql = "SELECT tbl_server.server_id, tbl_server_network.Network_IP, tbl_server.server_name, tbl_server.Server_OS_Version
         FROM tbl_server
         LEFT JOIN tbl_server_network 
         ON tbl_server.Server_ID = tbl_server_network.Server_ID";
